@@ -1,4 +1,4 @@
-# 🔐 Trusted Mac Provenance System
+#  Trusted Mac Provenance System
 
 **Cryptographically signed webcam capture with tamper detection for macOS**
 
@@ -8,16 +8,16 @@
 
 A proof-of-concept system for capturing images from Mac webcams with cryptographic signatures and embedded provenance metadata. Provides tamper detection and authenticity verification for trusted image workflows.
 
-## ✨ Features
+##  Features
 
-- 📸 **Webcam Capture** - Direct capture from built-in FaceTime cameras
-- 🔐 **Cryptographic Signing** - ECDSA signatures with EC P-256 keys  
-- ✅ **Tamper Detection** - Detects any pixel-level modifications
-- 📋 **Provenance Metadata** - Embedded capture and signing details
-- 🛡️ **Hardware Ready** - Architecture for secure element integration
-- 🧪 **Live Demo** - Interactive authenticity proof system
+-  **Webcam Capture** - Direct capture from built-in FaceTime cameras
+-  **Cryptographic Signing** - ECDSA signatures with EC P-256 keys  
+-  **Tamper Detection** - Detects any pixel-level modifications
+-  **Provenance Metadata** - Embedded capture and signing details
+-  **Hardware Ready** - Architecture for secure element integration
+-  **Live Demo** - Interactive authenticity proof system
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - macOS (tested on macOS 12+)
@@ -74,7 +74,7 @@ This runs a complete interactive demonstration proving:
    Cryptographic integrity confirmed
 ```
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Webcam → imagesnap → ECDSA Sign → Provenance Embed → Verification
@@ -112,33 +112,33 @@ photo.jpg.manifest  # Provenance metadata
 verified_photo.jpg  # Image with embedded manifest
 ```
 
-## 🛡️ Security Considerations
+##  Security Considerations
 
 ### Current Implementation (Week 1)
-⚠️ **Development Only**: Uses software-stored private keys
+ **Development Only**: Uses software-stored private keys
 
 ### Production Deployment (Week 2+)
-✅ **Hardware Security**: Integration with:
+ **Hardware Security**: Integration with:
 - ATECC608A secure elements
 - macOS Secure Enclave (T2/Apple Silicon)  
 - Hardware Security Modules (HSMs)
 
 ### Key Security
 ```bash
-# ❌ NEVER commit private keys to version control
-# ✅ Hardware keys cannot be extracted
-# ✅ Tamper detection triggers key erasure
+#  NEVER commit private keys to version control
+#  Hardware keys cannot be extracted
+#  Tamper detection triggers key erasure
 ```
 
-## 📊 Use Cases
+##  Use Cases
 
-- **📰 Journalism** - Tamper-proof evidence capture
-- **🏛️ Legal Systems** - Court-admissible documentation  
-- **🏥 Medical Imaging** - HIPAA-compliant workflows
-- **🔍 Forensics** - Chain of custody preservation
-- **📱 Content Verification** - Deepfake detection support
+- ** Journalism** - Tamper-proof evidence capture
+- ** Legal Systems** - Court-admissible documentation  
+- ** Medical Imaging** - HIPAA-compliant workflows
+- ** Forensics** - Chain of custody preservation
+- ** Content Verification** - Deepfake detection support
 
-## 🧪 Testing
+##  Testing
 
 ### Verify Setup
 ```bash
@@ -157,7 +157,7 @@ shasum -a 256 photo_tampered.jpg
 # Should be completely different
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create feature branch (`git checkout -b feature/amazing-feature`)
@@ -172,11 +172,11 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This is a proof-of-concept system. For production use:
 - Use hardware-backed keys only
@@ -184,13 +184,13 @@ This is a proof-of-concept system. For production use:
 - Add timestamp authorities for legal compliance
 - Consider additional metadata standards (C2PA, etc.)
 
-## 🔗 Related Projects
+##  Related Projects
 
 - [C2PA Specification](https://c2pa.org/) - Content Credentials standard
 - [Project Origin](https://projectorigin.com/) - Media authenticity initiative  
 - [ECDSA Standard](https://tools.ietf.org/html/rfc6979) - RFC 6979 specification
 
-## 📞 Support
+##  Support
 
 - Create an [Issue](https://github.com/yourusername/trusted-mac-provenance/issues) for bug reports
 - Start a [Discussion](https://github.com/yourusername/trusted-mac-provenance/discussions) for questions
@@ -198,4 +198,4 @@ This is a proof-of-concept system. For production use:
 
 ---
 
-**🎯 Goal**: Establish cryptographic trust for digital media in an era of sophisticated manipulation tools.
+** Goal**: Establish cryptographic trust for digital media in an era of sophisticated manipulation tools.
