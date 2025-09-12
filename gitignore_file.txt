@@ -1,0 +1,83 @@
+# CRITICAL: Never commit private keys or signatures!
+keys/device.key
+keys/*.key
+keys/*_private.*
+*.sig
+*.signature
+
+# Generated images and hashes
+photo*.jpg
+*.sha256
+*.manifest
+*_tampered.*
+*_modified.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+provenance-env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Logs
+*.log
+
+# Examples (keep structure, not actual files)
+examples/photo*.jpg
+examples/*.sig
+examples/*.sha256
+
+# Hardware-specific
+atecc608a/
+secure_enclave/

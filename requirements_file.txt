@@ -1,0 +1,9 @@
+# Cryptographic library for signature verification
+cryptography>=3.4.8
+
+# Optional: Full C2PA support (may have installation issues)
+# c2pa>=0.1.0
+
+# Development dependencies
+# pytest>=6.0.0
+# black>=21.0.0
