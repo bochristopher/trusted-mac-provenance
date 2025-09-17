@@ -90,7 +90,7 @@ photo.jpg  capture     signature     manifest    ✅/❌ Status
 - **`tamper_simple.py`** - Tamper testing utilities
 - **`hardware_signer.py`** - Hardware security module support
 
-## 🔧 Technical Details
+##  Technical Details
 
 ### Cryptography
 - **Algorithm**: ECDSA with SHA-256
